@@ -1,0 +1,358 @@
+@font-face { 
+	font-family: Archivo; 
+	src: url(./fonts/ArchivoBlack-Regular.ttf) format(opentype);
+	Font-weight: normal; 
+	Font-style: normal; 
+}
+
+@font-face { 
+	font-family: Italiana; 
+	src: url(./fonts/FontsFree-Net-vanitas-bold.ttf) format(opentype);
+	Font-weight: normal; 
+	Font-style: normal; 
+} 
+
+@font-face { 
+	font-family: Arch; 
+	src: url(./fonts/ArchitectsDaughter.ttf) format(opentype);
+	Font-weight: normal; 
+	Font-style: normal; 
+} 
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.voltar-btn {
+    background-color: white;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.header {
+    position: sticky;
+}
+  
+.header-links {
+      position: relative;
+      right: -700px;
+      top: -110px;
+      display: flex;
+      transition: .5s;
+      text-decoration: none;
+}
+  
+.header-links a {
+    white-space: nowrap;
+    padding: 0 40px;
+    color: #FFF;
+    font-family: Archivo;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 20;
+    line-height: 20px;
+    text-decoration: none;
+}
+  
+.header-links a:hover {
+      color: #969696;
+}
+  
+#icon {
+    position: relative;
+    left: 30px;
+    top: 5px;
+}
+
+.paragrafo {
+    display: block; 
+    margin-top: -5px; 
+}
+
+  .mar {
+    position: relative;
+    color: white;
+    font-family: Archivo;
+    left: 95px;
+    top: -60px;
+}
+
+#inicio {
+    position: relative;
+    top: -80px;
+    width: 1350px;
+    height: 500px;
+    flex-shrink: 0;
+}
+
+.TEM {
+    color: #FFF;
+    font-family: Italiana;
+    font-size: 128px;
+    font-style: normal;
+    line-height: normal;
+    position: relative;
+    top: -380px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nao {
+    color: #FFF;
+    font-family: Arch;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    top: -490px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Remed {
+    position: relative;
+    left: 100px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BF8136;
+    border-radius: 16px;
+    position: relative;
+    top: -350px;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #734116;
+}
+
+.semdeco {
+    font-size: 25px;
+    color: #590515;
+    text-decoration: none;
+}
+
+.Rev {
+    position: relative;
+    top: -397px;
+    left: 600px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BF8136;
+    border-radius: 16px;
+    position: relative;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #734116;
+}
+
+.Ind {
+    position: relative;
+    top: -300px;
+    left: 390px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BF8136;
+    border-radius: 16px;
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #734116;
+}
+
+.Revo {
+    position: relative;
+    top: -350px;
+    left: 900px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BF8136;
+    border-radius: 16px;
+    position: relative;
+    width: 250px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #734116;
+}
+
+.contai {
+    position: relative;
+    top: 10px;
+    background-image: url('./img/ilumini.jpg') ;
+    background-size: cover;
+    width: 1357px;
+    height: 450px; 
+}
+
+.contai::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor escura com 50% de opacidade (ajuste conforme necessário) */
+}
+
+.Titulo {
+    font-size: 60px;
+    font-family: Italiana;
+    color: #ffffff;
+    position: relative;
+    left: 25px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.oq {
+    color: #ffffff;
+    position: relative;
+    top: -30px;
+    left: 25px;
+    width: 95%;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.causa {
+    font-size: 30px;
+    font-family: Italiana;
+    position: relative;
+    left: 25px;
+    top: -10px;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.causas{
+    font-style: italic;
+    color: #FFF;
+    position: relative;
+    top: -570px;
+    left: 25px;
+    width: 95%;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.tainer {
+    position: relative;
+    top: 300px;
+    background-image: url('./img/ing.jpg') ;
+    background-size: cover;
+    width: 1357px;
+    height: 600px; 
+}
+
+.tainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor escura com 50% de opacidade (ajuste conforme necessário) */
+}
+
+.otainer {
+    position: relative;
+    top: 600px;
+    background-image: url('./img/indie.jpg') ;
+    background-size: cover;
+    width: 1357px;
+    height: 800px; 
+}
+
+.otainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor escura com 50% de opacidade (ajuste conforme necessário) */
+}
+
+.cotainer {
+    position: relative;
+    top: 800px;
+    background-image: url('./img/ingles.jpg') ;
+    background-size: cover;
+    width: 1360px;
+    height: 850px; 
+}
+
+.cotainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor escura com 50% de opacidade (ajuste conforme necessário) */
+}
+
+::-webkit-scrollbar {
+    background-color: #070707;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #1f1f1f;
+}
+
+
+.footer {
+    background-color: #141414;
+    color: #fff;
+    padding: 20px 0;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+  
+.footer-logo img {
+    width: 100px;
+}
+  
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#ma {
+    position: relative;
+    color: white;
+    font-family: Archivo;
+    width: 50px;
+    height: 50px;
+}
+
+.marro {
+    position: relative;
+    color: white;
+    font-family: Archivo;
+    left: 60px;
+    top: -60px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/estilos.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/icon.png">
+    <title> História - Quizzes </title>
+  </head>
+
+  <body class="body">
+  
+    <h1 class="title" id="title">Quiz de História</h1>
+
+    <div class="button-opt" id="theme-selection">
+      <p class="tem">Escolha um tema:</p>
+      <button onclick="startQuiz('revolucao_inglesa')">
+        Revolução Inglesa
+      </button>
+      <button onclick="startQuiz('iluminismo')">Iluminismo</button>
+      <button onclick="startQuiz('independencia_eua')">
+        Independência dos EUA
+      </button>
+      <button onclick="startQuiz('revolucao_francesa')">
+        Revolução Francesa
+      </button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container" style="display: none">
+
+      <form id="quiz-form">
+        <p id="question-number"></p>
+        <div class="theme-image">
+          <img src="" alt="image" width="150px" height="120px">
+        </div>
+        <!-- Adicionado o elemento para o número da pergunta -->
+        <p id="question"></p>
+        <label
+          ><input type="radio" name="answer" value="0" />
+          <span class="option"></span></label
+        ><br />
+        <label
+          ><input type="radio" name="answer" value="1" />
+          <span class="option"></span></label
+        ><br />
+        <label
+          ><input type="radio" name="answer" value="2" />
+          <span class="option"></span></label
+        ><br />
+        <label
+          ><input type="radio" name="answer" value="3" />
+          <span class="option"></span></label
+        ><br />
+        <button id="verify-button" type="button" onclick="checkAnswer()">
+          Verificar Resposta
+        </button>
+
+        <button id="next-button" type="button" onclick="nextQuestion()">
+          Próxima
+        </button>
+
+        <p id="correct-answer"></p>
+
+        <p id="warning"></p>
+      </form>  
+    </div>
+
+    <div id="quiz-result" style="display: none">
+      <form id="result-form">
+        <p id="points"></p>
+        <p id="result"></p>
+        <p id="result-incorrect"></p>
+      </form>
+    </div>
+    <script src="./scripts/funcoes.js"></script>
+  </body>
+</html>
